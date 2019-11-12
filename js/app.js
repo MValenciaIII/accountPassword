@@ -18,9 +18,9 @@ function submit() {
     var regexLowercase = new RegExp("(?=.*[a-z])");
     var regexUpperCase = new RegExp("[A-Z]");
     var regexNumber = new RegExp('(?=.*[0-9])');
-    var regexEmail = new RegExp("[a-zA-z0-9]@");
+    var regexEmail = new RegExp("(?=.*[@])(?=.*[a-zA-z0-9])");
     var regexSpecial = new RegExp("(?=.*[@$!%*?&])");
-    var allRequirements = new RegExp("[a-zA-z@$!%*#?&\d]")
+    // var allRequirements = new RegExp("[a-zA-z@$!%*#?&\d]")
     // var correctFormat = password.match(allRequirements);
 
 
@@ -49,7 +49,8 @@ function submit() {
     } 
     if (email.length == 0) {
         alert("Please input your email.")
-    } else if (correctEmailFormat) {
+    } 
+     if (correctEmailFormat) {
         alert('Make sure email is valid.')
     }
     if (password.length > 8 && password.length < 20) {
@@ -76,5 +77,18 @@ function submit() {
         }
     } else {
         alert('Need to be at least 8-20 characters.')
+    
+    }
+}
+
+
+function showPassword() {
+    let show = document.getElementById('show').checked;
+    if(show) {
+    document.getElementById('password').type = 'text';
+    document.getElementById('passwordConfirm').type = 'text'
+    } else {
+        document.getElementById('password').type = 'password'
+        document.getElementById('passwordConfirm').type = 'password'
     }
 }

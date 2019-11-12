@@ -1,0 +1,81 @@
+body {
+    background: url(../media/lined_paper.png);
+}
+
+header h1, h2 {
+    font-family: 'Francois One', sans-serif;
+    text-align: center;
+}
+
+nav ul {
+    margin-top: 8px;
+    float: right;
+    list-style: none;
+}
+
+nav li {
+    display: inline;
+    /* background-color: rgb(219, 219, 219); */
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    color: rgb(185, 185, 185);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.nav-bar {
+    padding: 10px;
+    background-color: rgb(66, 66, 66);
+    border: solid 4px rgb(119, 119, 119);
+} 
+
+.nav-bar ul {
+    margin-top: 8px;
+    list-style: none;
+}
+
+.nav-bar li {
+    display: inline;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.nav-bar a{
+    color: rgb(185, 185, 185);
+}
+
+.nav-bar a:hover {
+    color: none;
+    text-decoration: none;
+}
+
+.signUp {
+    margin-top: 30px;
+}
+
+.signUpBox { 
+    margin-right: 150px;
+}
+
+.signUpBox p{
+    margin: 0;
+    padding: 0;
+}
+
+.validationBox {
+    border: solid 4px gray;
+    background-color: rgb(247, 245, 245);
+    padding: 60px 0;
+    box-shadow: rgb(90, 89, 89) 2px 2px 2px 2px;
+}
+
+.validationBox li {
+    color:red;
+}
+
+.hero img{
+
+
+}
